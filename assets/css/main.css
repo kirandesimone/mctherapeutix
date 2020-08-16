@@ -1,0 +1,219 @@
+:root {
+	--light: #ededed;
+	--main: #246a65;
+}
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Raleway', sans-serif;
+}
+html,
+body {
+	height: 100%;
+	scroll-behavior: smooth;
+}
+/* - NAVBAR - */
+.social-icon {
+	font-size: 1.5rem;
+	padding: 0;
+	margin: 0;
+}
+.nav-link {
+	font-size: 1.25rem;
+	color: white !important;
+}
+.navbar-light .navbar-toggler {
+	border-color: rgba(255, 255, 255, 0.5) !important;
+	background-color: #246a6554;
+}
+.navbar-light .navbar-toggler-icon {
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28 255, 255, 255, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+/* - HOME - */
+#home {
+	color: white;
+	background-image: url('/assets/img/home.jpg');
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.home-title {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	width: 100%;
+	height: 90%;
+}
+.home-title p {
+	margin-top: 1%;
+	font-size: 1rem;
+	font-style: italic;
+}
+.home-arrow {
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	width: 100%;
+	height: 10%;
+}
+#down-arrow {
+	height: 30%;
+	margin-bottom: 0.25rem;
+}
+/* - ABOUT - */
+#about {
+	padding: 1% 0;
+	background: linear-gradient(139.6deg, #467b75 7.83%, #065f58 67.03%);
+	color: var(--light);
+	width: 100%;
+	height: fit-content;
+}
+#about h1 {
+	width: 100%;
+	text-align: center;
+}
+#about p {
+	margin-left: 2%;
+	font-weight: 300;
+	font-size: larger;
+}
+#about .row {
+	width: 100%;
+}
+.about-img img {
+	border-radius: 5px;
+	max-width: 100%;
+	display: block;
+	margin: 0 auto;
+}
+.about-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+/* - SERVICES - */
+#services {
+	height: fit-content;
+	color: black;
+}
+#services h1 {
+	padding: 1% 0;
+	text-align: center;
+}
+#services .row {
+	padding-bottom: 3rem !important;
+	margin-top: 2rem !important;
+	height: fit-content !important;
+}
+.services-text {
+	font-size: larger;
+	text-align: center;
+	max-width: 50rem;
+	margin: 0 auto;
+}
+.services-card {
+	overflow: hidden;
+}
+.card {
+	justify-content: center;
+	height: 100%;
+}
+@media (min-width: 992px) {
+	.services-card {
+		border-right: none !important;
+		border-radius: 0.25em 0 0 0.25em !important;
+	}
+	.services-list {
+		border-left: none !important;
+		border-radius: 0 0.25em 0.25em 0 !important;
+	}
+}
+.card-body {
+	position: absolute;
+	top: 50%;
+	transform: translate(0%, -50%);
+	color: white;
+	background: #467b7559;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.card-img-services {
+	width: 100%;
+	height: auto;
+	border-radius: none;
+	opacity: 1;
+}
+.list-group-item {
+	padding: 0.65rem 1.25rem !important;
+}
+.list-group-item:hover {
+	cursor: pointer;
+}
+.list-group-item.active {
+	background: var(--main) !important;
+}
+/* - TESTIMONIALS - */
+#testimonials {
+	padding: 1% 0;
+	padding-bottom: ;
+	background: linear-gradient(
+		179.43deg,
+		#065f58 6.03%,
+		#256c66 69.61%,
+		#467b75 92.38%
+	);
+	color: var(--light);
+	width: 100%;
+	height: fit-content;
+	text-align: center;
+}
+.testimonials-subtitle {
+	font-style: italic;
+	font-weight: 300;
+}
+.carousel-flex p {
+	width: 60%;
+	margin: 0 auto;
+}
+.carousel-flex p span {
+	display: block;
+	font-style: italic;
+}
+.carousel-flex {
+	min-height: 30rem;
+	height: fit-content;
+	display: flex;
+	justify-content: center;
+	justify-self: center;
+	align-self: center;
+	align-items: center;
+}
+/* - CONTACT - */
+#contact {
+	padding: 1% 0;
+	width: 100%;
+	height: fit-content;
+	text-align: center;
+}
+.contact-info {
+	width: 100%;
+	margin: 0 auto;
+}
+.social-icon-contact {
+	font-size: 1.2rem;
+	padding: 0;
+	margin: 0 0.5rem;
+	color: black;
+	display: inline;
+}
+.social-icon-contact:hover,
+.social-icon-contact:focus {
+	color: black;
+}
